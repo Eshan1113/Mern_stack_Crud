@@ -33,8 +33,8 @@ export default function Table({ Deletuser, UpdatedUser }) {
                                 <h2>Manage <b>Employees</b></h2>
                             </div>
                             <div className="col-sm-6">
-                                <a href="#" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
-                                    <i className="material-icons">&#xE147;</i> <span>Add New Employee</span>
+                            <a href="#" className="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
+                                    <i className="material-icons">&#xE147;</i> <span>Add New Student</span>
                                 </a>
                             </div>
                         </div>
@@ -43,8 +43,8 @@ export default function Table({ Deletuser, UpdatedUser }) {
                         <thead>
                             <tr>
                                 <th></th>
-                                <th>Name</th>
-                                <th>Father</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
                                 <th>Email</th>
                                 <th>Phone</th>
                                 <th>Actions</th>
@@ -56,7 +56,7 @@ export default function Table({ Deletuser, UpdatedUser }) {
                                     <tr>
                                         <td></td>
                                         <td>{elem.name}</td>
-                                        <td>{elem.fathername}</td>
+                                        <td>{elem.lastname}</td>
                                         <td>{elem.email}</td>
                                         <td>{elem.phone}</td>
                                         <td>

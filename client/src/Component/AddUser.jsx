@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 export default function AddUser() {
     const [value, setValue] = useState({
         name: '',
-        fathername: '',
+        lastname: '',
         email: '',
         phone: ""
     })
@@ -47,17 +47,17 @@ export default function AddUser() {
                     <div className="modal-content">
                         <form onSubmit={handleSubmit}>
                             <div className="modal-header">
-                                <h4 className="modal-title">Add Employee</h4>
+                                <h4 className="modal-title">Add Student</h4>
                                 <button type="button" className="close" data-bs-dismiss="modal" aria-hidden="true" ref={CloseRef}>&times;</button>
                             </div>
                             <div className="modal-body">
                                 <div className="form-group">
-                                    <label>Name</label>
+                                    <label>First Name</label>
                                     <input type="text" value={value.name} name='name' onChange={handleOnchange} className="form-control" required />
                                 </div>
                                 <div className="form-group">
-                                    <label>Father </label>
-                                    <input type="text" value={value.fathername} name='fathername' onChange={handleOnchange} className="form-control" required />
+                                    <label>Last Name </label>
+                                    <input type="text" value={value.lastname} name='lastname' onChange={handleOnchange} className="form-control" required />
                                 </div>
                                 <div className="form-group">
                                     <label>Email</label>
